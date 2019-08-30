@@ -1,0 +1,57 @@
+/*轮播图相关*/
+.carousel-control-next,
+.carousel-control-prev{
+    width:3%;
+    height:15%;
+    background:#a49e99;
+    border-radius:0.5rem;
+    top:40%;
+}
+.carousel-indicators li{
+    width:0.5rem;height:0.5rem;
+    background:#fff;
+    margin-left: 0.4rem;
+    margin-right:0.4rem;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background:#ff9800 ;
+}
+/*导航栏高*/
+.sec_h{height:171px;}
+.bg_big{background:#633b0075;}
+
+
+/*导航栏中的div*/
+.min_b1,.min_b2,.min_b3,.min_b4,.min_b5{
+    width:100%;height:0;
+    position: absolute;
+    bottom:0;left:0;
+    transition:all .5s;
+}
+.min_bolock:hover .min_b1,.min_bolock:hover .min_b2,
+.min_bolock:hover .min_b3,.min_bolock:hover .min_b4,
+.min_bolock:hover .min_b5{height:600px;}
+
+.min_b1{background-image: url("../img/abcd1.jpg");}
+.min_b2{background-image: url("../img/menu-bg.jpg");}
+.min_b3{background-image: url("../img/abcd2.jpg");}
+.min_b4{background-image: url("../img/abcd3.jpg");}
+.min_b5{background-image: url("../img/abcd4.jpg");}
+
+
+/*媒体查询*/
+@media screen and (min-width: 992px) {
+    .img_head{
+       background:#fff url("../img/left.jpg") no-repeat fixed;
+        height:927px;
+    }
+    .banner_h{
+        height:568px;
+        z-index: 1000;
+    }
+    .w-20{width:20%;}
+}
+@media screen and (min-width: 992px){
+    .w-20{width:33.3333%}
+}
