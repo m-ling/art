@@ -50,6 +50,7 @@ a:hover{text-decoration: none !important;}
 #three{
     height:635px;
     background:#fff;
+    z-index: 0;
 }
 #three .school-box{
     width:74%; 
@@ -85,13 +86,43 @@ a:hover{text-decoration: none !important;}
      color:#fff;
      border:1px solid #028e98;
 }
+/* 留言板 */
+.msg_board{
+    height:890px;
+    width: 100%;
+    z-index:2;
+}
+.mssages{
+    height:500px;
+    margin-top:216px;
+}
+.mssages>img,.mssages>h2{
+    margin-top:3%;
+    margin-left:5%;    
+}
+.mssages span:first-child{
+     margin-top: 10%;
+     margin-left:5%; 
+     display:block;
+}
 
+.mssages .iconfont{
+    font-size:50px;
+    color:#ddd;
+}
+.mssages .photo{
+    height:400px;
+    width:100px;
+    float: right;
+    margin-top: -20px;
+}
 /*媒体查询*/
 /* 大 */
 @media screen and (min-width: 992px) {
     .img_head{
-       background:#fff url("../img/left.jpg") no-repeat fixed;
-        height:1333px;
+       background:#fff url("../img/left.jpg") no-repeat;
+       background-attachment:fixed;
+        height:1180px;
     }
     .banner_h{
         height:568px;
@@ -134,15 +165,18 @@ a:hover{text-decoration: none !important;}
 /* 标题栏 */
 .nav_tit{
     width:100%;
-    height:100px;
+    height:0px;
     background:#fff;
     position: fixed;
     z-index: 1;
+    /* display:none; */
+    overflow: hidden;
+    transition: height 0.5;
 }
 /* #nav img{height:84px;} */
 .nav_tit a{
     width:9.6%;
-    height:100px;
+    height:86px;
     display: block;
     background: #fff;
     float: left;
@@ -150,6 +184,7 @@ a:hover{text-decoration: none !important;}
     line-height: 90px;
     margin-right: 10px;
     color:#696969;   
+    font-size:16px;
 }
 .nav_font{width:20%;}
 .nav_tit a:hover{background: #ccc;color:#000;}
