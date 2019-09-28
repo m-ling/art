@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -6,13 +7,34 @@
     <title></title>
     <link rel="stylesheet" href="CSS/bootstrap.css"/>
     <link rel="stylesheet" href="CSS/main.css"/>
+    <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1428053_54ilq1sc2ap.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <div class="container-fluid">
     <div class="img_head">
+        <!-- 标题栏 -->
+        <div id="nav" class="nav_tit row m-0 ">
+                <div class="col-lg-1 pt-3 ml-3 "><img src="img/x_logo.png" alt="" class=" "/></div>
+                <div class="col-lg-9 "><a href="/" class="active">首页</a>
+                    <a href="/about/">走进新亚</a>
+                    <a href="/class_music/">课程中心</a>
+                    <a href="/teaching_results_m/">教学成果</a>
+                    <a href="/teacher_HO/">师资团队</a>
+                    <a href="/environmental_school/">教学环境</a>
+                    <a href="/news/">新亚资讯</a>
+                    <a href="/family_information/">艺考资讯</a>
+                    <a href="/contact/">联系我们</a></div>
+                <div class="col-lg-1 pt-4 pr-0 ">
+                        <span  class=" iconfont iconweibiaoti1 mr-1" ></span>
+                        <span class=" iconfont iconweixin1"  ></span>
+                </div>
+               
+        </div>
         <!--第一层栅格-->
         <div class="d-flex flex-wrap ">
             <!--标志-->
@@ -21,10 +43,10 @@
             </div>
                 <div class="col-lg-10 col-sm-12 px-0 bg_big container px-0 w-100">
                     <!--轮播图-->
-                    <div class="carousel w-100" data-ride="carousel"  id="demo" >
+                    <div class="carousel w-100  slide" data-ride="carousel"  id="demo" data-interval="2500" >
                         <div class="carousel-inner ">
                             <div class="carousel-item active">
-                                <img src="img/2017122311361886.jpg" alt="" class="w-100"/>
+                                <img src="img/c01.png" alt="" class="w-100"/>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/img_main_1.png" alt="" class="w-100"/>
@@ -33,17 +55,16 @@
                                 <img src="img/img_main_2.jpg" alt="" class="w-100"/>
                             </div>
                         </div>
-                        <a data-slide="prev" href="#demo" class="carousel-control-prev">
-                            <span class="carousel-control-prev-icon "></span>
+                        <a data-slide="prev" href="#demo" class="carousel-control-prev bg-transparent">
+                            <span class=" iconfont iconzuo "></span>
                         </a>
-                        <a data-slide="next" href="#demo" class="carousel-control-next">
-                            <span class="carousel-control-next-icon "></span>
+                        <a data-slide="next" href="#demo" class="carousel-control-next bg-transparent">
+                            <span class=" iconfont iconzuo-copy "></span>
                         </a>
-                        <ul class="carousel-indicators">
+                        <ul class="carousel-indicators" style="z-index: auto;">
                             <li data-target="#demo" data-slide-to="0" class="active"></li>
                             <li data-target="#demo" data-slide-to="1" class=""></li>
                             <li data-target="#demo" data-slide-to="2" class=""></li>
-                            <li data-target="#demo" data-slide-to="3" class=""></li>
                         </ul>
 
                     </div>
@@ -51,30 +72,124 @@
             <!--大模块导航栏-->
             <div class="col-lg-2 bg-transparent"></div>
             <div class="col-lg-10  px-0 bg_big sec_h">
-                <div class="d-flex flex-wrap ">
-                   <div class="col-lg-2 col-md-4 sec_h min_bolock position-relative ">
-                       <div class="min_b1"></div>
+                <div class="nev_fir d-flex flex-wrap ">
+                   <div class="col-lg-2  col-sm-4 px-0 sec_h min_bolock position-relative text-center position-relative ">
+                        <div class="out_title  border-right">
+                                <i class="iconfont iconmusic"></i>
+                                <h4>音乐培训</h4>
+                                <p >Music training</p>
+                            </div>
+                    <div class="min_b1">
+                        <div class="mytext">
+                                <span class="iconfont iconmusic"></span>
+                                <h4>音乐培训</h4>
+                                <p> Music training</p>
+                                <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
+                                <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                           </div>
+                        </div>
                    </div>
-                   <div class="col-lg-2 col-md-4 border sec_h min_bolock position-relative">
-                       <div class="min_b2"></div>
+                   <div class="col-lg-2  col-sm-4 px-0 sec_h min_bolock position-relative text-center">
+                        <div class="out_title  border-right ">
+                                <i class="iconfont iconbiaoyan01"></i>
+                                <h4>表演培训</h4>
+                                <p>Performance  </p>
+                            </div>
+                       <div class="min_b2">
+                            <div class="mytext">
+                                    <span class="iconfont iconbiaoyan01"></span>
+                                    <h4>表演培训</h4>
+                                    <p> Music training</p>
+                                    <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
+                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                               </div>
+                       </div>
                    </div>
-                   <div class="col-lg-2 col-md-4 border sec_h min_bolock position-relative">
-                       <div class="min_b3"></div>
+                   <div class="col-lg-2  col-sm-4 px-0 sec_h min_bolock position-relative text-center">
+                        <div class="out_title  border-right ">
+                                <i class="iconfont iconwudao"></i>
+                                <h4>舞蹈培训</h4>
+                                <p>Dance training</p>
+                            </div>
+                       <div class="min_b3">
+                            <div class="mytext">
+                                    <span class="iconfont iconwudao"></span>
+                                    <h4>舞蹈培训</h4>
+                                    <p> Music training</p>
+                                    <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
+                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                               </div>
+                       </div>
                    </div>
-                   <div class="col-lg-2 col-md-4 border sec_h min_bolock position-relative">
-                       <div class="min_b4"></div>
+                   <div class="col-lg-2  col-sm-4 px-0 sec_h min_bolock position-relative text-center">
+                        <div class="out_title  border-right ">
+                                <i class="iconfont iconhuatong"></i>
+                                <h4>播音培训</h4>
+                                <p>Broadcast training</p>
+                            </div>
+                       <div class="min_b4">
+                            <div class="mytext">
+                                    <span class="iconfont iconhuatong"></span>
+                                    <h4>播音培训</h4>
+                                    <p> Music training</p>
+                                    <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
+                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                               </div>
+                       </div>
                    </div>
-                   <div class="col-lg-2 col-md-4 border sec_h min_bolock position-relative">
-                       <div class="min_b5"></div>
+                   <div class="col-lg-2  col-sm-4 px-0 sec_h min_bolock position-relative text-center">
+                        <div class="out_title border-right">
+                                <i class="iconfont icondaoyan"></i>
+                                <h4>编导培训</h4>
+                                <p>Director training</p>
+                            </div>
+                       <div class="min_b5">
+                            <div class="mytext">
+                                    <span class="iconfont icondaoyan"></span>
+                                    <h4>编导培训</h4>
+                                    <p> Music training</p>
+                                    <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
+                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                               </div>
+                       </div>
                    </div>
-                   <div class="col-lg-2 col-md-4  bg-white sec_h "></div>
-                </div>
-                </div>
-            </div>
+                   <div class=" none col-lg-2  bg-white sec_h "></div>
+                   <!--第三板块-->
+                   <div class="col-lg-2 bg-transparent"></div>
+                   <div class="col-lg-10 px-0  position-relative" id="three">
+                <div class="school">
+                    <div class="school-box ">
+                        <h2 class="" style="font-size: 43px;">新亚艺术培训学校</h2>
+                        <p class="mt-5  school_char" style="width: 80%;">成都市锦江区新亚艺术培训学校，是经成都市锦江区教育局、双流区教育局批准成立、锦江区民政局、双流区民政局备案的专业艺术培训机构。学校主要针对四川音乐学院及全国各大艺术院校开展强化集训</p>
+                        <ul class="px-3 mt-lg-5">
+                            <li class="px-3 " >
+                                 <p><span>15</span><span style="font-size:18px;">+</span></p>
+                                <p class="school_char">专注艺术教育培训15年 <br>致力打造全国典范艺术培训学校</p>
+                            </li>
+                            <li class="px-3" >
+                                <p><span>7000</span><span style="font-size:18px;">+</span></p>
+                                 <p class="school_char">已为全国各大高等艺术院校<br> 输送了7000余名艺术人才</p>
+                            </li>
+                            <li class="px-3 mb-5">
+                                <p><span>150</span><span style="font-size:18px;">+</span></p>
+                                <p class="school_char">新亚拥有一大批专业水准高 <br>教学经验丰富的教师团队</p>
+                            </li>
+                        </ul>
+                        <a href="javascript:;" class="ml-5 animated fadeInLeft">about Us</a>
+                    </div>
+                </div> 
+                   </div>
+                   <!-- 留言板 -->
 
+                </div>
+                </div>
+            
+           
         </div>
     </div>
 
+</div>
+   
 </div>
 </body>
 </html>

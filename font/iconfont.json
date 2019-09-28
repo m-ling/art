@@ -1,0 +1,44 @@
+{
+  "id": "1428053",
+  "name": "my font",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "the first",
+  "glyphs": [
+    {
+      "icon_id": "530244",
+      "name": "表演-01",
+      "font_class": "biaoyan01",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "638441",
+      "name": "导演",
+      "font_class": "daoyan",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "2827526",
+      "name": "音乐",
+      "font_class": "music",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "4548188",
+      "name": "应用中心_舞蹈",
+      "font_class": "wudao",
+      "unicode": "e7cd",
+      "unicode_decimal": 59341
+    },
+    {
+      "icon_id": "10176668",
+      "name": "话筒",
+      "font_class": "huatong",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    }
+  ]
+}
