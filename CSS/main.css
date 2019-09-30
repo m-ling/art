@@ -6,9 +6,32 @@ a:hover{text-decoration: none !important;}
     font-family:engFont;
     src: url('../font/tradegothic-boldcondtwenty.ttf');
     }
+/* 下拉菜单 */
+.menus{
+    width:38px;
+    height:36px;
+    font-size:31px !important;
+    background:#fff;
+    position: fixed;
+    margin: 2% 1%;
+    cursor:pointer;
+    line-height: 36px;
+}
+.menus:hover{
+  color:#fff;
+  background:rgba(0, 0, 0, 0.479);
+}
+.down{
+  width: 80%;
+  height:80%;
+  background:rgba(0, 0, 0, 0.698);
+  position: fixed;
+  z-index:1;
+  display:block;
+  margin: 6% 1%;
+}
 
 /*轮播图相关*/
-
 .carousel-control-next,
 .carousel-control-prev{
     width:3%;
@@ -90,11 +113,10 @@ a:hover{text-decoration: none !important;}
 .msg_board{
     height:890px;
     width: 100%;
-    z-index:2;
 }
 .mssages{
     height:500px;
-    margin-top:216px;
+    margin-top:137px;
 }
 .mssages>img,.mssages>h2{
     margin-top:3%;
@@ -171,7 +193,6 @@ a:hover{text-decoration: none !important;}
     z-index: 1;
     /* display:none; */
     overflow: hidden;
-    transition: height 0.5;
 }
 /* #nav img{height:84px;} */
 .nav_tit a{
