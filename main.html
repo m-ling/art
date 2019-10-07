@@ -8,21 +8,45 @@
     <link rel="stylesheet" href="CSS/bootstrap.css"/>
     <link rel="stylesheet" href="CSS/main.css"/>
     <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1428053_1h08a3at1nx.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1428053_bs9zw8k98uk.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="./js/jquery.nicescroll.js"></script>
+    <script src="./js/smoothscroll.js"></script>
 </head>
 <body>
 <div class="container-fluid">
     <div class="img_head">
       <!--下拉菜单 -->
-        <div >
-         
+        <div class="menus_box d-flex flex-wrap p-0 ">
+          <div class="col-lg-6 clo-md-6 col-sm-5  menus_detail p-0">
+              <div class="bg_menus"></div>
+              <ul>
+                <li> 
+                  <p class="iconfont iconarrow-right-bottom-copy"></p>
+                  <a href="/"><span>01.</span>首页</a></li>
+                <li><a href="/about/"><span>02.</span>走进新亚</a></li>
+                <li><a href="/class_music/"><span>03.</span>课程中心</a></li>
+                <li><a href="/teaching_results_m/"><span>04.</span>教学成果</a></li>
+                <li><a href="/teacher_HO/"><span>05.</span>师资团队</a></li>
+                <li><a href="/environmental_school/"><span>06.</span>校园环境</a></li>
+                <li><a href="/news/"><span>07.</span>新亚资讯</a></li>
+                <li><a href="/family_information/"><span>08.</span>艺考资讯</a></li>
+                <li><a href="/contact/"><span>09.</span>联系我们</a></li>
+                <li><a href="/message/"><span>10.</span>校长信箱</a></li>
+                <li><span class="iconfont iconweixin2"></span><span class="iconfont iconweibiaoti1"></span>
+                    <p class="iconfont iconbiankuang-copy "></p></li>
+			</ul>
+             
+          </div>
+          <div class="col-lg-2 clo-md-4 col-sm-2 p-0">
+              <div id="menus" class=" menus_icon iconfont iconcarte "></div></div>
+            <!-- <div class="down"></div> -->
         </div>
         <!-- 标题栏 -->
-        <div id="nav" class="nav_tit row m-0 ">
+        <div id="nav" class="mm row m-0 ">
                 <div class="col-lg-1 pt-2 ml-3 mt-1 "><img src="img/x_logo.png" alt="" class=" "/></div>
                 <div class="col-lg-9 "><a href="/" class="active">首页</a>
                     <a href="/about/">走进新亚</a>
@@ -41,14 +65,12 @@
         </div>
         <!--最外层栅格-->
         <div class="d-flex flex-wrap ">
-            <!--标志-->
-            <div class="col-lg-1  bg-transparent">
-                <img src="img/x_logo.png" alt="" class="float-left m-3"/>
+             <!-- 下拉菜单按键 -->
+             <div class="col-lg-1 col-sm-1">   
             </div>
-            <!-- 下拉菜单按键 -->
-            <div class="col-lg-1  ">
-                <div class="menus iconfont iconcarte"></div>
-                <div class="down"></div>
+            <!--标志-->
+            <div class="col-lg-1  col-sm-2 bg-transparent p-0">
+                <img src="img/x_logo.png" alt="" class="float-left mt-lg-2"/>
             </div>
             <div class="col-lg-10 col-sm-12 px-0 bg_big container px-0 w-100">
                     <!--轮播图-->
@@ -95,8 +117,8 @@
                                 <span class="iconfont iconmusic"></span>
                                 <h4>音乐培训</h4>
                                 <p> Music training</p>
-                                <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
-                                <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                                <p class="mt-5 mb-3">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
+                                <a href="javascript:;" class="min_btn mt-4">see more</a>
                            </div>
                         </div>
                    </div>
@@ -114,7 +136,7 @@
                                     <h4>表演培训</h4>
                                     <p> Music training</p>
                                     <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
-                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                                    <a href="javascript:;" class="min_btn mt-4">see more</a>
                                </div>
                        </div>
                    </div>
@@ -132,7 +154,7 @@
                                     <h4>舞蹈培训</h4>
                                     <p> Music training</p>
                                     <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
-                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                                    <a href="javascript:;" class="min_btn mt-4">see more</a>
                                </div>
                        </div>
                    </div>
@@ -150,7 +172,7 @@
                                     <h4>播音培训</h4>
                                     <p> Music training</p>
                                     <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
-                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                                    <a href="javascript:;" class="min_btn mt-4">see more</a>
                                </div>
                        </div>
                    </div>
@@ -168,7 +190,7 @@
                                     <h4>编导培训</h4>
                                     <p> Music training</p>
                                     <p class="mt-5">视唱练耳乐理、音乐教育、声乐表演、流行演唱、录音艺术、作曲等专业考前培训。</p>
-                                    <a href="javascript:;" class="btn btn-outline-light mt-4">see more</a>
+                                    <a href="javascript:;" class="min_btn mt-4">see more</a>
                                </div>
                        </div>
                    </div>
@@ -205,18 +227,254 @@
         </div>
         
     </div>
-     <!-- 留言板 -->
-    <div class=" msg_board bg-warning">
-        <div class="mssages  position-relative bg-danger">
+     <!-- 教师模块 -->
+     <!-- 占位 -->
+    <div class=" msg_board bg-transparent"></div>
+    <!-- ** -->
+    <div class="teacher-box row p-0 m-0">
+        <div class="col-lg-3 col-sm-0 m-0  position-relative ter_person" >
             <span class="iconfont iconyinhao"></span>
             <img src="./img/startitle.png" >
-            <h2>校友留言</h2>
-            <!-- <img src="./img/star-right-cover.png" alt=""> -->
-            <div class="photo bg-success"></div>
+            <h3 class="text-secondary">教师风采</h3>
+            <div class="teacher-img " >
+                    <img src="./img/2018011809441285.png" alt="">
+               
+            </div>
         </div>
+        <div class="col-lg-9 col-sm-12 m-0  row p-0 m-0">
+            <div class="col-12 bg-transparent" style="height:21%"></div>
+            <div class="col-12 row p-5 m-0 teacher-msg" style="height:848px">
+                <div class="col-12 box1 " style="height:41%">
+                    <div class="ter_content"  >
+                        <span>袁斌</span>
+                        <span>钢琴特聘教师</span>
+						<p> &nbsp; &nbsp;西华大学艺术学院钢琴教师，四川省音乐家协会会员，四川省钢琴学会会员，
+                            新加坡国际青少年钢琴比赛中国赛区评委，世界华人艺术大赛中国赛区评委，中韩青少年钢
+                            琴大赛中国赛区评委，香港国际钢琴公开赛四川赛区评委。</p>
+                        <p> &nbsp; &nbsp;任职期间，教学成果显著，所指导的学生多次在国内外重大钢琴比赛中获奖，
+                            本人亦荣获优秀指导教师奖。主研并参与多个省部级、校级科研项目及课题，并在北大核心期
+                            刊发表多篇学术论文。 </p>
+                        <p> &nbsp; &nbsp;所指导的学生钢琴基础扎实，演奏方法专业，以优异的成绩考入中国音乐学院、
+                            四川音乐学院、四川师范大学音乐学院等国内外知名学府，并多次在国内外重大钢琴比赛中获奖：
+                            如香港国际钢琴公开赛肖邦作品组一等奖、香港国际钢琴公开赛李斯特作品组一等奖、新加坡国际
+                            青少年钢琴比赛一等奖等。 </p> <br></div>
+                </div>
+                <div class="col-2 col-md-2 col-sm-4 p-0 " style="height:20%">
+                  <div class="bg-white p-1 mx-1 mt-1 "><img src="./img/2018011809441285.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="col-2 col-md-2 col-sm-4 p-0" style="height:20%">
+                   <div class="bg-white p-1 mx-1 mt-1 "><img src="./img/2018011810293227.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="col-2 col-md-2 col-sm-4 p-0" style="height:20%">
+                   <div class="bg-white p-1 mx-1 mt-1"><img src="./img/2019100214374917.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="col-2 col-md-2 col-sm-4 p-0" style="height:20%">
+                  <div class="bg-white p-1 mx-1 mt-1"><img src="./img/2019100214374836.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="col-2 col-md-2 col-sm-4 p-0" style="height:20%">
+                   <div class="bg-white p-1 mx-1 mt-1"><img src="./img/2019100214374994.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="col-2 col-md-2 col-sm-4 p-0" style="height:20%">
+                   <div class="bg-white p-1 mx-1 mt-1 "><img src="./img/2019100214374927.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="col-12 " style="height:20%">
+                        <a href="javascript:;" class="ml-5 animated fadeInLeft">see more</a></div>
+            </div>
         </div>  
+    
+       
+        
 </div>
-   
+    <!-- 学术活动 -->
+     <div id='active' class="row p-lg-5 p-sm-2 m-0">
+        <div class="col-12 m-md-5" >
+            <span class="iconfont iconyinhao"></span><br>
+            <img src="./img/OurActivities.png" >
+            <h3 class="text-secondary">学术活动</h3>
+        </div>
+     <!-- 栅格模块 -->
+       <div class=" col-lg-2 col-md-2 col-sm-6  border p-0">
+            <div class="act_block">
+                <div class="iconfont iconsheyingji"></div>
+                <div class="act_txt">20届传媒专业学生参与电影 《电击少女》 的剧组拍摄</div></div>
+       </div>
+       <div class="col-lg-2 col-md-2  col-sm-6  border p-0">
+            <div class="act_block even">
+                    <div class="iconfont icongangqin"></div>
+                    <div class="act_txt">新亚声乐大师课：歌唱家孙立忠现场指导教学</div></div>
+       </div>
+       <div class=" col-lg-2 col-md-2 col-sm-6  border p-0">
+            <div class="act_block">
+                    <div class="iconfont iconzhihuiyuan"></div>
+                    <div class="act_txt">声乐大师课:杨光、李秀英大师分享成名心路历程</div></div>
+       </div>
+       <div class=" col-lg-2 col-md-2 col-sm-6  border p-0">
+            <div class="act_block even">
+                    <div class="iconfont iconjiangzuo"></div>
+                    <div class="act_txt">高男高音歌唱家肖玛老师学术讲座与示范教学</div></div>
+       </div>
+       <div class=" col-lg-2 col-md-2 col-sm-6  border p-0">
+            <div class="act_block">
+                    <div class="iconfont iconyinle"></div>
+                    <div class="act_txt">“中国好歌曲”四强学员邓鼓音乐交流会</div></div>
+       </div>
+       <div class=" col-lg-2 col-md-2 col-sm-6  border p-0">
+            <a href="javascript:;" class="ml-5 animated fadeInLeft">see more</a>
+       </div>
 </div>
+<!-- 尾部 -->
+<div class="footer_1 row p-0 m-0">
+    <div class="footer_max col-lg-9 col-md-11">
+        <div class="footer-box">
+            <div class="footer-lamp " >
+                <div class="benner">
+                    <ul class="ul_imgs transition">
+                        <li><img src="./img/2017122311430741.png" alt=""></li>
+                        <li><img src="./img/2017122311430886.png" alt=""></li>
+                        <li><img src="./img/2017122311431003.png" alt=""></li>
+                        <li><img src="./img/2017122311431184.png" alt=""></li>
+                        <li><img src="./img/2017122311431215.png" alt=""></li>
+                        <li><img src="./img/2017122311430741.png" alt=""></li>
+                        <li><img src="./img/2017122311430886.png" alt=""></li>
+                        <li><img src="./img/2017122311431003.png" alt=""></li>
+                        <li><img src="./img/2017122311431184.png" alt=""></li>
+                        <li><img src="./img/2017122311431215.png" alt=""></li>
+                        <li><img src="./img/2017122311430741.png" alt=""></li>
+                        <li><img src="./img/2017122311430886.png" alt=""></li>
+                        <li><img src="./img/2017122311431003.png" alt=""></li>
+                        <li><img src="./img/2017122311431184.png" alt=""></li>
+                        <li><img src="./img/2017122311431215.png" alt=""></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-containerfadeInUp animated">
+                <div class="swiper-wrapper" >   </div>
+            </div>
+            <p class="title fadeInUp animated" >Contact</p>
+            <div class="footer-info">
+                <ul class="nav-footer">
+                    <li id="btn_1" >锦江校区</li>
+                    <li id="btn_2" > 双流校区</li>
+                </ul>
+            <div class="info-silde">
+                <ul class="info-list1 active">
+                    <li class="fadeInUp animated">
+                        <p>
+                            <span class="iconfont iconxuexiao"></span>
+                            <span>学校：</span>成都市锦江区新亚艺术培训学校 办学许可证：教民151010470000930号</p>
+                    </li>
+                    <li class="fadeInUp animated">
+                        <p>
+                            <span class="iconfont iconicon01"></span>
+                            <span>电话：</span>15882339847</p>
+                    </li>
+                    <li class=" fadeInUp animated">
+                        <p>
+                            <span class="iconfont iconweibiaoti1"></span>
+                            <span>QQ：</span>712087118 传媒专业咨询QQ：3378371233</p>
+                    </li>
+                    <li class=" wow fadeInUp animated">
+                        <p>
+                            <span class="iconfont icondizhi"></span>
+                            <span>地址：</span>成都市锦江区下沙河铺（大营门街）36号（望江宾馆对面，四川省林业干部学校内）</p>
+                    </li>
+                    <li class=" wow fadeInUp animated">
+                        <p>
+                            <span class="iconfont iconyiliaohangyedeICON-"></span>
+                            <span>公交：</span>104路、47路、313路、230路到下沙河铺站下车望江宾馆对面</p>
+                    </li>
+                    <li class=" wow fadeInUp animated" >
+                        <p>
+                            <span class="iconfont iconditie"></span>
+                            <span>地铁：</span>地铁二号线到塔子山公园站下车</p>
+                    </li>
+                </ul>
+                <ul class="info-list2">
+                    <li class=" wow fadeInUp animated">
+                        <p>
+                            <span class="iconfont iconxuexiao"></span>
+                            <span>学校：</span>成都市双流区新亚艺术培训学校 办学许可证：教民151012270000079号</p>
+                    </li>
+                    <li class=" wow fadeInUp animated">
+                        <p>
+                            <span class="iconfont iconicon01"></span>
+                            <span>电话：</span>18224093547</p>
+                    </li>
+                    <li class=" wow fadeInUp animated">
+                        <p>
+                            <span class="iconfont iconweibiaoti1"></span>
+                            <span>QQ：</span>2852357549 传媒专业咨询QQ：3378371233</p>
+                    </li>
+                    <li class=" wow fadeInUp animated">
+                        <p>
+                            <span class="iconfont icondizhi"></span>
+                            <span>地址：</span>成都市双流县九江镇万家4组210号</p>
+                    </li>
+                    <li class=" wow fadeInUp animated">
+                        <p>
+                            <span class="iconfont  iconyiliaohangyedeICON-"></span>
+                            <span>公交：</span>832B路到星空路草金路口公交站、840路、S87路到万家村公交站</p>
+                    </li>
+                </ul>
+        </div>
+
+        <ul class="footer_link fadeInUp animated">
+            <li style="color:rgba(255, 255, 255, .6)">友情链接:</li>
+                <li><a href="http://www.xinyayk.com">成都艺考培训</a></li>
+                <li><a href="http://www.anmo.com.cn/">小儿推拿培训</a></li>
+                <li><a href="https://www.cambridgenetwork.cn/">美国高中留学</a></li>
+                <li><a href="http://www.video-study.com">视频制作培训</a></li>
+                <li><a href="http://www.sxwendu.cn/">文都考研</a></li>
+                <li><a href="http://www.xue114.com">国际学校</a></li>
+                <li><a href="https://hf.tantuw.com/">合肥坦途教育网</a></li>
+                <li><a href="http://www.lixinedu.cn/">立信国际财经学院</a></li>
+                <li><a href="http://www.qiuxuebao.com">志愿填报</a></li>
+                <li><a href="http://www.hnshifan.com/">湖南师范大学自考</a></li>
+                <li><a href="http://sy.xhd.cn">沈阳雅思培训</a></li>
+                <li><a href="http://www.cyjyxx.com">课外辅导班</a></li>
+                <li><a href="http://www.luang88.com">蛋糕培训学校</a></li>
+                <li><a href="http://www.chuangdianhuashi.com/">北京画室</a></li>
+                <li><a href="http://www.rsre.cn">成人高考</a></li>
+                <li><a href="http://edu.jiameng.com">特色教育加盟</a></li>
+                <li><a href="http://www.hbwendu.com/">湖北文都考研</a></li>
+                <li><a href="http://www.bjxzxw.com">职业技术学校</a></li>
+                <li><a href="http://www.prcba.com/">外国人学汉语</a></li>
+                <li><a href="http://www.sxzk.cc">陕西自考网</a></li>
+                <li><a href="https://www.jinpaocun.com/">浸泡村国际英语</a></li>
+                <li><a href="http://usa.weilanliuxue.cn/">美国留学办理</a></li>
+                <li><a href="http://cfa.gfedu.net">CFA</a></li>
+                <li><a href="http://www.zyjmw.com">加盟网</a></li>
+                <li><a href="http://www.chinatpm.net/">5s管理</a></li>
+                <li><a href="http://www.eduei.com/xinlixue/">心理学在职研究生</a></li>
+                <li><a href="http://zaojiao.91jm.com">早教加盟</a></li>
+                <li><a href="www.weiweida.cn">晨会游戏</a></li>
+                <li><a href="http://china.findlaw.cn/tianjin/">天津律师</a></li>
+                <li><a href="http://www.railedu.cn/">石家庄铁路学校</a></li>
+                <li><a href="http://www.dfmzhu.com">蛋糕培训</a></li>
+                    </ul><br>
+        <div class="page-footer" >
+            <p>CopyRight© xinyayk.com All Rights Reserved2017-2022 蜀ICP备12024504号
+                <br>
+                <span>站长QQ：712087118</span>
+                <span>网站地图</span>
+                <span>校长信箱</a></span>
+                <span>联系我们</span>
+            </p>
+        </div>
+        </div>
+        </div>		
+    </div>
+    <div class="footer_min col-lg-1 col-md-1 position-relative">
+        <div class="min_box">
+            <ul class=""> 
+                <li><a href="" class="iconfont iconweibo"></a></li>
+                <li><a href="" class="iconfont iconqq1"></a></li>
+                <li><a href="" class="iconfont iconweixin3"></a></li>
+                <li><a href="javascript:window.scrollTo(0,0) " class="iconfont icontop"></a></li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
