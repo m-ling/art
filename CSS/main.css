@@ -211,8 +211,11 @@ li{list-style: none;}
     /* left: calc(8vw /4); */
     z-index: 1;
     overflow: hidden;
- 
+ }
 
+#aaa {
+    height: 98px;
+    margin: 3% 0%;
 }
 .teacher-msg{
     background:url('../img/teacher1.jpg') no-repeat; 
@@ -247,13 +250,9 @@ li{list-style: none;}
 .teacher-msg a{
     position: absolute;
     left: 12%;
-    top: -2%;
+    top: 5%;
 }
-.col-2>div{
-    position:absolute;
-    z-index:3;
-    border: 1px solid #696969;
-}
+
 .col-2>div:hover{
     border: 3px solid#028e98;
    
@@ -264,6 +263,7 @@ li{list-style: none;}
 }
 .box1{
   margin:auto;
+  overflow: hidden;
 }
 
 /* 学术活动 */
@@ -453,6 +453,32 @@ transition:all .5s linear;
 .info-silde ul{
     height:244px;
 }
+.teacher-msg .ter_ul>li{
+    width:300px;height:100%;
+    float: left;
+    position: relative;
+}
+.teacher-msg .ter_ul>li>div{
+    width:100%;
+    height:60%;
+    overflow:auto;
+    font-size:18px;
+    color: #ddd;
+}
+.teacher-msg .ter_ul>li>div :first-child{
+    font-size:40px !important;
+}
+.teacher-msg .ter_ul>li>div :nth-child(2){
+    color: #888 !important;
+}
+.ter_ul{
+    height: 500px;
+    float: left;
+    width: 7500px;
+   
+}
+#md{font-size:18px !important;}
+
 /*媒体查询*/
 /* 大 */
 @media screen and (min-width: 992px) {    
@@ -512,6 +538,7 @@ transition:all .5s linear;
     color:#2d2f34;
     background:#ddd;
 }
+
 /*  */
 /* 标题栏 */
 @keyframes change{
@@ -573,6 +600,14 @@ transition:all .5s linear;
 .even{
     margin-top: 11%;
 }
+/* 教师 */
+.col-2>div{
+    width: 90%;
+    height: auto;
+    position:absolute;
+    z-index:3;
+    border: 1px solid #696969;
+}
 
 }
 /* 中 */
@@ -617,6 +652,7 @@ transition:all .5s linear;
         font-size: 18px !important;
         left: -32% !important;
 }
+
 }
 /* 小 */
 @media screen and (max-width:768px){
@@ -629,7 +665,7 @@ transition:all .5s linear;
     }
     #three ul>li span {
         font-size: 20px;
-        color: #028e98;
+        color: #dae5e6;
     }
     h4{font-size:13px !important;}
     .col-sm-4,.col-sm-5,.col-sm-2,.col-sm-1,.col-sm-6 {
@@ -748,4 +784,18 @@ transition:all .5s linear;
     display: none;
 }
 
+.col-2>div{
+    width: 58%;
+}
+#aaa{
+    height: 138px;
+    margin: -11% -1%;
+  }
+  .ter_content {
+    width: 92%;
+  }
+  .teacher-msg{
+      padding-left:3% !important;
+      padding-right: 7% !important;
+  }
 }

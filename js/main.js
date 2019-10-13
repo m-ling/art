@@ -19,7 +19,7 @@ $(document).ready(
   );
   $(document).ready(
     function() { 
-      $(".ter_content").niceScroll({
+      $(".teacher-msg .ter_ul>li>div").niceScroll({
         cursorcolor: "#ccc", // 改变滚动条颜色，使用16进制颜色值
         cursoropacitymin: 0, // 当滚动条是隐藏状态时改变透明度, 值范围 1 到 0
         cursoropacitymax: 1, // 当滚动条是显示状态时改变透明度, 值范围 1 到 0
@@ -35,23 +35,23 @@ $(document).ready(
     }
   );
 
-  $(document)
-  .on('click', 'a[href*="#"]', function() {
-    if ( this.hash ) {
-      $.bbq.pushState( '#/' + this.hash.slice(1) );
-      return false;
-    }
-  })
-  .ready(function() {
-    $(window).bind('hashchange', function(event) {
-      var tgt = location.hash.replace(/^#\/?/,'');
-      if ( document.getElementById(tgt) ) {
-        $.smoothScroll({scrollTarget: '#' + tgt});
-      }
-    });
+  // $(document)
+  // .on('click', 'a[href*="#"]', function() {
+  //   if ( this.hash ) {
+  //     $.bbq.pushState( '#/' + this.hash.slice(1) );
+  //     return false;
+  //   }
+  // })
+  // .ready(function() {
+  //   $(window).bind('hashchange', function(event) {
+  //     var tgt = location.hash.replace(/^#\/?/,'');
+  //     if ( document.getElementById(tgt) ) {
+  //       $.smoothScroll({scrollTarget: '#' + tgt});
+  //     }
+  //   });
 
-    $(window).trigger('hashchange');
-  });
+  //   $(window).trigger('hashchange');
+  // });
 // 标题栏 
 $(window).scroll(function(){
     var scrollH=$(document).scrollTop();
@@ -79,7 +79,7 @@ $('#menus').click(function(){
        $('.menus_detail>ul').toggle();
 })
 
-// 
+// 走马灯
 var i=0;//计数
 var img_wid=152;//每个li的固定宽度
 var img_tim=500;//每次轮播动画持续的时间
@@ -103,12 +103,11 @@ setInterval(()=>{
  moveTo();
 },2000);
 
-// 
+//按钮
 $('#btn_1').click(function(){
-  console.log(123);
   $(this).css({
     background:'#000',
-    border:'0',
+    border:'0',  
   })
   $('#btn_2').css({
     background:'#2d2f34',
@@ -118,7 +117,6 @@ $('#btn_1').click(function(){
   $('.info-list2').hide();
 })
 $('#btn_2').click(function(){
-  console.log(123);
   $('#btn_1').css({
     background:'#2d2f34',
     border:'1px solid #ddd',
@@ -130,6 +128,52 @@ $('#btn_2').click(function(){
   $('.info-list2').show();
   $('.info-list1').hide();
 })
+
+
+//教师模块
+
+$('#aaa').on('click','.col-2>div',function(e){
+  var terImg=$(this);
+  $('#ter_img').attr('src',`${e.target.src}`);
+  terImg.css({border:'3px solid #028e98'});
+  var mm=terImg.parent().siblings().children('div');
+  mm.css({border:'0'});
+
+console.log(terImg.attr('id'));
+var to=terImg.attr('id');
+ moveto(to);
+// console.log(to);
+})
+
+//  var query=document.
+var m_w=$('.box1').css('width').slice(0,-2);
+$('.teacher-msg .ter_ul>li').css({ width:`${m_w}px`});
+// console.log(m_w);
+// console.log(window.innerWidth);
+
+function moveto(to){
+  // console.log(to);
+  var i=0;
+  var liWidth=m_w;
+  var terUl=$('.ter_ul');
+  if(to==undefined){to=0;}
+  i=to;
+  terUl.css('margin-left',`${-i*liWidth+"px"}`);
+  
+}
+// window.onresize = function(){
+//   var m_w_c=$('.box1').css('width').slice(0,-2);
+//   var liWidth=m_w_c;
+//   var terUl=$('.ter_ul');
+// if(to==undefined){to=0;}
+// i=to;
+// console.log(123123);
+// console.log(-i);
+// console.log(liWidth);
+// console.log(-i*liWidth);
+// terUl.css('margin-left',`${-i*liWidth+"px"}`)
+//   }
+
 
 
 }
