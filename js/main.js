@@ -132,6 +132,7 @@ $('#btn_2').click(function(){
 
 //教师模块
 
+
 $('#aaa').on('click','.col-2>div',function(e){
   var terImg=$(this);
   $('#ter_img').attr('src',`${e.target.src}`);
@@ -147,10 +148,14 @@ var to=terImg.attr('id');
 
 //  var query=document.
 var m_w=$('.box1').css('width').slice(0,-2);
-$('.teacher-msg .ter_ul>li').css({ width:`${m_w}px`});
-// console.log(m_w);
-// console.log(window.innerWidth);
 
+window.onresize = function(){
+  m_w=$('.box1').css('width').slice(0,-2);
+  $('.teacher-msg .ter_ul>li').css({ width:`${m_w}px`});
+
+ }
+ $('.teacher-msg .ter_ul>li').css({ width:`${m_w}px`});
+console.log(m_w);
 function moveto(to){
   // console.log(to);
   var i=0;
@@ -161,19 +166,6 @@ function moveto(to){
   terUl.css('margin-left',`${-i*liWidth+"px"}`);
   
 }
-// window.onresize = function(){
-//   var m_w_c=$('.box1').css('width').slice(0,-2);
-//   var liWidth=m_w_c;
-//   var terUl=$('.ter_ul');
-// if(to==undefined){to=0;}
-// i=to;
-// console.log(123123);
-// console.log(-i);
-// console.log(liWidth);
-// console.log(-i*liWidth);
-// terUl.css('margin-left',`${-i*liWidth+"px"}`)
-//   }
-
 
 
 }
