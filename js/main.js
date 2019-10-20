@@ -161,19 +161,6 @@ function moveto(to){
   terUl.css('margin-left',`${-i*liWidth+"px"}`);
   
 }
-// window.onresize = function(){
-//   var m_w_c=$('.box1').css('width').slice(0,-2);
-//   var liWidth=m_w_c;
-//   var terUl=$('.ter_ul');
-// if(to==undefined){to=0;}
-// i=to;
-// console.log(123123);
-// console.log(-i);
-// console.log(liWidth);
-// console.log(-i*liWidth);
-// terUl.css('margin-left',`${-i*liWidth+"px"}`)
-//   }
-
 
 
 }
