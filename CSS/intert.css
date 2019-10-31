@@ -88,12 +88,14 @@ body, html {
     margin-bottom: 40px;
 }
 .imgs{
-    width: 34%;
-    height: auto;
-    position: relative;
-    top: 193px;
-    left: 8%;
-    /* position: fixed;*/
+  width: 500px;
+  height: 354px;
+  position: relative;
+  top: 193px;
+  left: 8%;
+  background: url(../img/1.jpg) no-repeat ;
+  background-size: 100% 100% !important;
+  transition: background 1s;
 }
 .imgs-m{
     position: fixed;
@@ -261,12 +263,6 @@ body, html {
         left: 59px;
         color: #ddd;
     }  
-    /* .ter_box2{
-        position: absolute;
-        top: -14%;
-        left: 9%;
-        color: #ddd;
-    }  */
     .inter_img>.col-12{
         height: 39%;
     }
@@ -286,4 +282,9 @@ body, html {
         top: 80px;
         left:0;
     }
+    .ter-til{
+      font-size: 26px;
+      font-weight: bolder;
+      margin-left: 45px;
+}
  }
