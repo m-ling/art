@@ -88,10 +88,10 @@ body, html {
     margin-bottom: 40px;
 }
 .imgs{
-  width: 500px;
-  height: 354px;
-  position: relative;
-  top: 193px;
+  width: 37%;
+  height: 31%;
+  position: absolute;
+  top: 857px;
   left: 8%;
   background: url(../img/1.jpg) no-repeat ;
   background-size: 100% 100% !important;
@@ -254,6 +254,19 @@ body, html {
         top: 80px;
         left:0;
     }
+    .ad_ul {
+      display: none !important;
+  }
+  .advantage .circle {
+    width: 100% !important;
+  }
+  .imgs {
+    display: none !important;
+  }
+  .introduce ul>li>p{
+    padding: 24px !important;
+    text-indent:2em;
+  }
  }
 
  @media screen and (max-width:768px){
@@ -282,9 +295,22 @@ body, html {
         top: 80px;
         left:0;
     }
+    .ad_ul {
+      display: none !important;
+  }
     .ter-til{
       font-size: 26px;
       font-weight: bolder;
       margin-left: 45px;
 }
+  .advantage .circle{
+      width: 100% !important;
+    }
+  .imgs {
+    display: none !important;
+  }
+  .introduce ul>li>p{
+    padding: 24px !important;
+    text-indent:2em;
+  }
  }
